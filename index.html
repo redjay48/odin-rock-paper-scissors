@@ -32,7 +32,7 @@
         }
 
 
-        function match(computerSelection, userSelection) {
+        function getMatchResult(computerSelection, userSelection) {
             if (computerSelection === userSelection) {
                 return `It's a draw!`;
             } else if (computerSelection === 'rock' && userSelection === 'scissors') {
@@ -53,24 +53,24 @@
         }
 
 
-        function game() {
-            let playerScore = 0;
+        function playGame() {
+            let userScore = 0;
             let computerScore = 0;
             for (let i = 0; i< 5;i++) {
-                let string = match(computerPlay(), userPlay());
+                let string = getMatchResult(computerPlay(), userPlay());
                 if (string.charAt(4) === 'w') {
-                    playerScore ++;
+                    userScore ++;
                 } else if (string.charAt(4) === 'l') {
                     computerScore ++;
                 } 
             }
-            let draw = 5 -(computerScore + playerScore);
-            if (playerScore > computerScore) {
-                return `You Win! Here are the Scores: You: ${playerScore} Computer: ${computerScore} Draw Matches: ${draw}`;
-            } else if (playerScore < computerScore) {
-                return `You Lose! Here are the Scores: You: ${playerScore} Computer: ${computerScore} Draw Matches: ${draw}`;
-            } else if (playerScore === computerScore) {
-                return `It's a draw! No one wins. Here are the Scores: You: ${playerScore} Computer: ${computerScore} Draw Matches: ${draw}`;
+            let drawCount = 5 -(computerScore + userScore);
+            if (userScore > computerScore) {
+                return `You Win! Here are the Scores: You: ${userScore} Computer: ${computerScore} Draw Matches: ${drawCount}`;
+            } else if (userScore < computerScore) {
+                return `You Lose! Here are the Scores: You: ${userScore} Computer: ${computerScore} Draw Matches: ${drawCount}`;
+            } else if (userScore === computerScore) {
+                return `It's a draw! No one wins. Here are the Scores: You: ${userScore} Computer: ${computerScore} Draw Matches: ${drawCount}`;
             }
         }
     </script>

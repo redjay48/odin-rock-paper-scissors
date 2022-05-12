@@ -1,6 +1,8 @@
 .button {
     size: 20px;
     margin:20px;
+    padding: 30px;
+    font-size: 20px;
 }
 
 #container {
@@ -13,6 +15,51 @@
 }
 
 #display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     border: 2px dotted black;
     margin: 20px;
+    padding: 25px;
+}
+
+#lists {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ul {
+    margin-top: 0;
+    text-align: center;
+    list-style: none;
+    margin: 0 20px;
+    
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.playerScore {
+    padding: 0 42px;
+    margin-right: 18px;
+}
+
+.draw {
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+.computerScore {
+    padding: 0 65px;
+}
+
+.result> p{
+    font-size: 40px;
+    font-weight: 900;
 }

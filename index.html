@@ -6,23 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
     <div id="container">
         <div id="display">
-            <p></p>
+            <h1>Rock Paper Scissors</h1>
+            <div class="heading">
+                <h3>Player Score</h3>
+                <h3>Computer Score</h3>
+                <h3>Draw</h3>
+            </div>
+            <div id="lists">
+                <ul class="playerScore">
+
+                </ul>
+                <ul class="computerScore">
+                
+                </ul>
+                <ul class="draw">
+    
+                </ul>
+            </div>
+            
         </div>
         <div id="buttons">
-            <button class="button rock">🪨</button>
-            <button class="button paper">📄</button>
-            <button class="button scissors">✂️</button>
+            <button class="button" id="rock">🪨</button>
+            <button class="button" id="paper">📄</button>
+            <button class="button" id="scissors">✂️</button>
         </div>
-        
+        <div class="result"></div>
     </div>
 
-    <script src="main.js"></script>
+    
 </body>
 
 </html>

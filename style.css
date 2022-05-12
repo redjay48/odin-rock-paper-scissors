@@ -1,0 +1,18 @@
+.button {
+    size: 20px;
+    margin:20px;
+}
+
+#container {
+    border: 2px solid gray;
+    margin: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    border: 2px dotted black;
+    margin: 20px;
+}
